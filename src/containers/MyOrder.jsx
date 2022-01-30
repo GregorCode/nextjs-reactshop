@@ -19,8 +19,9 @@ const MyOrder = () => {
     <aside className={styles.MyOrder}>
       <div className={styles['MyOrder-container']}>
         <div className={styles['title-container']}>
-          <Image className={(styles['more-clickable-area'], styles.pointer)} src={arrow} alt="arrow" onClick={() => toggleOrder()} />
+          <Image src={arrow} alt="arrow" onClick={() => toggleOrder()} />
           <p className={styles.title}>My order</p>
+          <p className={styles.title}>GG</p>
         </div>
         <div className={styles['my-order-content']}>
           <div className={styles['my-orders']}>

@@ -1,14 +1,11 @@
 const withPWA = require('next-pwa');
-/* import runtimeCaching from 'next-pwa/cache'; */
 
 module.exports = withPWA({
   pwa: {
     dest: 'public',
     register: true,
     mode: 'production',
-    disable: false,
-    /* runtimeCaching,
-    buildExcludes: [/middleware-manifest\.json$/], */
+    disable: process.env.NODE_ENV === 'development',
   },
   reactStrictMode: true,
   images: {

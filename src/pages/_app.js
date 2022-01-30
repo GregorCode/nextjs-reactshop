@@ -11,11 +11,11 @@ function MyApp({ Component, pageProps }) {
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN80WG7H93" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-ZN80WG7H93');
-      `}
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZN80WG7H93');
+        `}
       </Script>
       <Header />
       <Component {...pageProps} />
